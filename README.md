@@ -6,7 +6,7 @@
 
 Context Aware Trees predicts N6-methyladenosine (m6A) sites from processed nanopore direct RNA sequencing data. One neural encoder summarizes the reads at each site. A local XGBoost predictor uses 20 features; a full CatBoost predictor adds 21 transcript-context features. The final score is **55% local + 45% full**.
 
-[Model and features](<task 1 context aware trees/README.md#model-and-features>) · [SG-NEx analysis](<task 2/README.md>)
+[Interactive Explorer](https://m6a-context-aware-trees.streamlit.app/) · [Model and features](<task 1 context aware trees/README.md#model-and-features>) · [SG-NEx analysis](<task 2/README.md>)
 
 ![Model overview: a shared encoder produces eight summaries per site. Together with 12 direct features, these enter both tree ensembles. Local XGBoost uses 20 features and contributes 55% of the final score; full CatBoost adds 21 context features and contributes 45%.](assets/model-overview.png)
 
